@@ -49,8 +49,12 @@ const images = [
   },
 ];
 
+const container = document.querySelector('main .container');
+
 const galleryList = document.createElement('ul');
 galleryList.classList.add('gallery');
+
+container.appendChild(galleryList);
 
 images.forEach(({ preview, original, description }) => {
   const galleryItem = document.createElement('li');
@@ -67,13 +71,39 @@ images.forEach(({ preview, original, description }) => {
 
   galleryLink.appendChild(galleryImage);
   galleryItem.appendChild(galleryLink);
+
   galleryList.appendChild(galleryItem);
 });
-
-const mainContainer = document.querySelector('main');
-mainContainer.appendChild(galleryList);
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
+
+/*lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+  onShown: () => {
+    const images = document.querySelectorAll('.sl-wrapper .sl-image img');
+    images.forEach(img => {
+      img.style.width = '1112px';
+      img.style.height = '640px';
+      img.style.objectFit = 'cover';
+      img.style.margin = 'auto';
+    });
+  },
+});*/
+/*const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+  onShown: () => {
+    // Додаємо обробник для зображення після відкриття
+    const lightboxImages = document.querySelectorAll('.sl-image img');
+    lightboxImages.forEach(img => {
+      img.style.width = '1112px'; // Встановлюємо потрібну ширину
+      img.style.height = '640px'; // Встановлюємо потрібну висоту
+      img.style.objectFit = 'cover'; // Зберігаємо пропорції
+      img.style.margin = 'auto'; // Центруємо
+    });
+  },
+});*/

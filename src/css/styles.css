@@ -17,17 +17,17 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
-.gallery {
-  list-style: none;
+.container .gallery {
   justify-content: space-between;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  width: 1440px;
-  height: 696px;
-  margin: 0 auto;
-  padding: 24px 156px;
-  column-gap: 24px;
   row-gap: 24px;
+  max-width: 1200px;
+  max-height: 696px;
+  margin: 0 auto;
+  padding: 24px 36px;
+  column-gap: 24px;
 }
 
 .gallery-item {
@@ -41,26 +41,22 @@
   outline: none;
 }
 
-.gallery-link {
-  display: inline-block;
-  text-decoration: none;
-  outline: none;
-  line-height: 0;
-}
-
 .gallery-image {
-  height: 200px;
   width: 360px;
   object-fit: cover;
 }
 
-/*.basicLightbox {
-  background-color: rgba(46, 47, 66, 0.8);
+.simple-lightbox .sl-image {
+  max-height: 640px !important;
+  max-width: 1112px !important;
 }
 
-.basicLightbox__placeholder img.modal-image:first-child:last-child {
-  width: 1112px !important;
+div .sl-image {
+  max-width: 1112px !important;
+}
+
+.sl-wrapper .sl-image img {
+  max-width: 1112px !important;
   height: 640px !important;
   object-fit: cover;
-  margin: auto;
-}*/
+}
