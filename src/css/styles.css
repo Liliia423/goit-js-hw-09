@@ -46,17 +46,14 @@
   object-fit: cover;
 }
 
-.simple-lightbox .sl-image {
-  max-height: 640px !important;
-  max-width: 1112px !important;
-}
-
-div .sl-image {
-  max-width: 1112px !important;
-}
+/*======== large image ======== */
 
 .sl-wrapper .sl-image img {
-  max-width: 1112px !important;
+  width: 1112px !important;
   height: 640px !important;
   object-fit: cover;
+}
+
+.sl-caption {
+  width: 100% !important;
 }
