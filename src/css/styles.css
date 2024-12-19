@@ -47,7 +47,10 @@
 }
 
 /*======== large image ======== */
-
+.sl-wrapper .sl-image {
+  min-width: 1112px !important;
+  min-height: 640px !important;
+}
 .sl-wrapper .sl-image img {
   width: 1112px !important;
   height: 640px !important;
