@@ -56,5 +56,54 @@
 /*======== feedback form ======== */
 
 .feedback-form {
-  margin: 32px auto;
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.lableFeedback {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.inputEmailField {
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+.inputMessageFeedback {
+  width: 360px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+.buttonSubmitInForm {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
 }

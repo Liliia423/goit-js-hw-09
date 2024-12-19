@@ -45,3 +45,13 @@ function handleSubmit(event) {
   formData = { email: '', message: '' };
   form.reset();
 }
+/* ==== стилізація форми ==== */
+const inputEmailFeedback = document.querySelector('input');
+inputEmailFeedback.classList.add('inputEmailField');
+const lableFeedback = document.querySelector('label');
+lableFeedback.classList.add('lableFeedback');
+/* ==== помилкові ==== */
+const inputMessageFeedback = document.querySelector('textarea');
+inputMessageFeedback.classlist.add('inputMessageFeedback');
+const buttonSubmitInForm = document.querySelector('button');
+buttonSubmitInForm.classlist.add('buttonSubmitInForm');
