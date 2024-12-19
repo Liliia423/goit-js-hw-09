@@ -18,14 +18,10 @@
 @import url('./footer.css');
 
 .container .gallery {
-  justify-content: space-between;
-  /*align-items: center;*/
   display: flex;
   flex-wrap: wrap;
   row-gap: 24px;
-  max-width: 1200px;
   height: 648px;
-  margin: 0 auto;
   padding: 24px 36px;
   column-gap: 24px;
 }
@@ -38,17 +34,6 @@
 .gallery-image {
   object-fit: cover;
 }
-
-/*.gallery-item {
-  max-height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 360px;
-  margin: 0;
-  padding: 0;
-  outline: none;
-}*/
 
 /*======== large image ======== */
 .sl-wrapper .sl-image {
