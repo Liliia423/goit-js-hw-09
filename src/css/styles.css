@@ -52,3 +52,9 @@
 .sl-caption {
   width: 100% !important;
 }
+
+/*======== feedback form ======== */
+
+.feedback-form {
+  margin: 32px auto;
+}
