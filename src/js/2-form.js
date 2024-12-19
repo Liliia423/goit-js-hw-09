@@ -19,17 +19,18 @@ function handleInput(event) {
 
 function populateFormFromStorage() {
   const savedData = localStorage.getItem(storageKey);
+
   if (savedData) {
     try {
       formData = JSON.parse(savedData);
-      form.elements.email.value = formData.email || '';
-      form.elements.message.value = formData.message || '';
+      form.elements.email.value = formData.email.trim() || '';
+      form.elements.message.value = formData.message.trim() || '';
     } catch (error) {
       console.error('Error parsing JSON from localStorage:', error);
     }
   }
 }
-
+/* ==== валідація введення даних і очищення форми ==== */
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -39,9 +40,8 @@ function handleSubmit(event) {
     return alert('Fill please all fields!');
   }
 
-  /*console.log(formData);
-
-  localStorage.removeItem(storageKey); 
-  formData = { email: '', message: '' }; 
-  form.reset();*/
+  console.log(formData);
+  localStorage.removeItem(storageKey);
+  formData = { email: '', message: '' };
+  form.reset();
 }
