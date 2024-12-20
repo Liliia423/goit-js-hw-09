@@ -3,7 +3,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
-    preview: '../img/image-1-1x.jpg',
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg',
     original: '../img/image-1-2x.jpg',
     description: 'Hokkaido Flower',
   },
